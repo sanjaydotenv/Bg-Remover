@@ -1,12 +1,53 @@
-# React + Vite
+# RemoveBG
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple AI-powered background remover built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Upload images from your device
+* Remove image backgrounds using Remove.bg API
+* Preview the processed image
+* Download the background-removed image
+* Loading state while processing
+* Clean and responsive UI
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* Tailwind CSS
+* JavaScript
+* Remove.bg API
+
+## 📁 Project Structure
+
+```text
+src/
+├── Components/
+│   └── BgRemoverUi.jsx
+├── uploadImage.js
+├── App.jsx
+└── main.jsx
+```
+
+## ⚙️ How It Works
+
+1. User selects an image.
+2. The image is received as a `File` object.
+3. The file is added to `FormData`.
+4. The image is sent to the Remove.bg API.
+5. The API returns the processed PNG image.
+6. A Blob URL is created for the result.
+7. React displays the processed image.
+8. User can download the final image.
+
+## 🔑 API Key
+
+This project uses the Remove.bg API.
+
+For production, never expose your API key inside the React frontend.
+Use a backend server and store the API key in an environment variable.
+
+## 📌 Note
+
+This project is created for learning and practice purposes.
+The background removal functionality is powered by the Remove.bg API.
