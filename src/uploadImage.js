@@ -28,7 +28,7 @@ const removeBg = async (file) => {
   const response = await fetch("https://api.remove.bg/v1.0/removebg", {
     method: "POST",
     headers: {
-      "X-Api-Key": `${import.meta.env.VITE_API_KEY}`,
+      "X-Api-Key": `w2HGYAnNqA6MGJyUVQmqrZeS`,
     },
     body: formData,
   });
