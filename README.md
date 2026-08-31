@@ -51,3 +51,6 @@ Use a backend server and store the API key in an environment variable.
 
 This project is created for learning and practice purposes.
 The background removal functionality is powered by the Remove.bg API.
+
+
+Live Link :- https://bg-remover-three-beta.vercel.app/
